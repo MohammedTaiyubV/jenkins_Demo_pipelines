@@ -3,12 +3,14 @@ pipeline{
     stages{
         stage("Build"){
             steps{
-                echo "Build Success"
+                javac Fact.java
+                echo "Compile  success"
             }
         }
-        stage("Test"){
+        stage("Execute"){
             steps{
-                echo "Test Success"
+                java Fact
+                echo "Execute Success"
             }
         }
         stage("Deploye"){
