@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("Execute"){
             steps{
-                 bat 'java Fact'
+                 bat 'java Fact.java'
                 echo "Execute Success"
             }
         }
